@@ -1,4 +1,4 @@
-import Models from '../../../basic_modules/models'
+import Models from 'models'
 export default class Model extends Models
 {
 	constructor()
