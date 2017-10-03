@@ -1,0 +1,97 @@
+{
+  "name": "BaronJensen/React.io",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Loops",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/BaronJensen/React.io",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/React.io",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "React.io",
+      "subhead": "MVC framework that implements React and Socket.io ",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "React.io: MVC framework that implements React and Socket.io ",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "BaronJensen",
+          "repo": "React.io"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<p>#REACT.IO\nFramework that implements react and sockets io.</p>\n<p>1.git clone <a href=\"https://github.com/Jeelbale/React.io.git\">https://github.com/Jeelbale/React.io.git</a>\n2.npm install\n-Edit the webpack.confing for:</p>\n<p>========================================================\nDevelompent:\nvar webpack = require(&apos;webpack&apos;);\nvar path = require(&apos;path&apos;)</p>\n<p>module.exports = \n{\n    devtool: &apos;inline-source-map&apos;,\n    entry:[\n        &apos;webpack-dev-server/client?<a href=\"http://127.0.0.1:8080/\">http://127.0.0.1:8080/</a>&apos;,\n        &apos;webpack/hot/only-dev-server&apos;,\n        &apos;./src&apos;\n        ],\n        output:\n        {\n            path:path.join(__dirname,&apos;public&apos;),\n            filename: &apos;bundle.js&apos;\n        },\n        resolve:\n        {\n            modulesDirectories: [&apos;node_modules&apos;,&apos;src&apos;],\n            extensions: [&apos;&apos;,&apos;.js&apos;,&apos;.jsx&apos;]\n        },\n        module:\n        {\n            loaders:[{\n                test: /.jsx?$/,\n                exclude: /node_modules/,\n                loaders:[&apos;react-hot&apos;,&apos;babel?presets[]=react,presets[]=es2015&apos;]\n            }]\n        },\n        plugins:[\n              new webpack.HotModuleReplacementPlugin(),\n              new webpack.NoErrorsPlugin(),\n        ]\n}</p>\n<p>2.2.Run webpack-dev-server</p>\n<p>========================================================\nProduction(you find your bundle at public/bundle.js):\nmodule.exports = \n{\n    devtool: &apos;cheap-module-source-map&apos;,\n    entry:[\n        &apos;./src&apos;\n        ],\n        output:\n        {\n            path:path.join(__dirname,&apos;public&apos;),\n            filename: &apos;bundle.js&apos;\n        },\n        resolve:\n        {\n            modulesDirectories: [&apos;node_modules&apos;,&apos;src&apos;],\n            extensions: [&apos;&apos;,&apos;.js&apos;,&apos;.jsx&apos;]\n        },\n        module:\n        {\n            loaders:[{\n                test: /.jsx?$/,\n                exclude: /node_modules/,\n                loaders:[&apos;react-hot&apos;,&apos;babel?presets[]=react,presets[]=es2015&apos;]\n            }]\n        },</p>\n<pre>    plugins:<span class=\"hljs-type\"></span>[\n          <span class=\"hljs-keyword\">new</span> <span class=\"hljs-type\">webpack</span>.HotModuleReplacementPlugin(),\n          <span class=\"hljs-keyword\">new</span> <span class=\"hljs-type\">webpack</span>.NoErrorsPlugin(),\n          <span class=\"hljs-keyword\">new</span> <span class=\"hljs-type\">webpack</span>.DefinePlugin({\n                         <span class=\"hljs-string\">&apos;process.env&apos;</span>: <span class=\"hljs-type\"></span>{\n                             <span class=\"hljs-string\">&apos;NODE_ENV&apos;</span>: <span class=\"hljs-type\">JSON</span>.stringify(<span class=\"hljs-string\">&apos;production&apos;</span>)\n                         }\n                         })\n              ]</pre><p>}</p>\n<p>2.2.Run webpack --progress -p</p>\n<hr>\n<p>[Jensen Baronville]Jensen Baronville</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/BaronJensen/React.io",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/BaronJensen",
+          "text": "BaronJensen"
+        }
+      ]
+    }
+  ]
+}
