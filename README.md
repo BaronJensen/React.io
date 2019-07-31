@@ -1,13 +1,19 @@
-#REACT.IO
+# REACT.IO
+
 Framework that implements react and sockets io.
 
+
 1.git clone https://github.com/Jeelbale/React.io.git
+
 2.npm install
+
 -Edit the webpack.confing for:
 
+===
 
-========================================================
 Develompent:
+
+```javascript 
 var webpack = require('webpack');
 var path = require('path')
 
@@ -41,14 +47,16 @@ module.exports =
 			  new webpack.HotModuleReplacementPlugin(),
         	  new webpack.NoErrorsPlugin(),
 		]
-}
+}```
 
 
 2.2.Run webpack-dev-server
 
+===
 
-========================================================
+
 Production(you find your bundle at public/bundle.js):
+```javascript 
 module.exports = 
 {
 	devtool: 'cheap-module-source-map',
@@ -84,7 +92,7 @@ module.exports =
 							 })
       			]
 
-}
+}```
 
 2.2.Run webpack --progress -p
 
